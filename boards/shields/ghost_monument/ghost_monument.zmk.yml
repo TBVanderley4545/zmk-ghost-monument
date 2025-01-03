@@ -1,0 +1,11 @@
+file_format: "1"
+id: ghost_monument
+name: Ghost Monument
+type: shield
+url: https://github.com/TBVanderley4545/zmk-ghost-monument
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - ghost_monument_left
+  - ghost_monument_right

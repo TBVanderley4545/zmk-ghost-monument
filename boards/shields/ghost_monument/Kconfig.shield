@@ -1,0 +1,5 @@
+config SHIELD_GHOST_MONUMENT_LEFT
+    def_bool $(shields_list_contains,ghost_monument_left)
+
+config SHIELD_GHOST_MONUMENT_RIGHT
+    def_bool $(shields_list_contains,ghost_monument_right)
