@@ -11,4 +11,4 @@ include:
   - board: seeeduino_xiao_ble
     shield: ghost_monument_right
   - board: seeeduino_xiao_ble
-    shield: shield_reset
+    shield: settings_reset
