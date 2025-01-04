@@ -5,17 +5,15 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 &mt {
-    quick-tap-ms = <100>;
-    global-quick-tap;
-    flavor = "tap-preferred";
-    tapping-term-ms = <170>;
+  quick-tap-ms = <100>;
+  global-quick-tap;
+  flavor = "tap-preferred";
+  tapping-term-ms = <170>;
 };
 
 / {
@@ -31,8 +29,6 @@
             flavor = "tap-preferred";
         };
     };
-
-    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -72,10 +68,10 @@
 
         Layer_3 {
             bindings = <
-           &kp C_PREV    &kp C_NEXT       &kp C_PP      &trans  &bt BT_SEL 0    &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-           &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_MUTE    &trans  &bt BT_SEL 1    &trans          &trans        &trans          &trans           &trans
-&mkp LCLK  &kp C_BRI_DN  &kp C_BRI_UP     &trans        &trans  &bt BT_SEL 2    &trans          &trans        &trans          &trans           &trans  &mkp RCLK
-                                          &out OUT_BLE  &trans  &bt BT_CLR      &trans          &trans        &out OUT_USB
+        &kp C_PREV    &kp C_NEXT       &kp C_PP    &trans  &bt BT_SEL 0    &bt BT_CLR    &trans  &trans  &trans  &trans
+        &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_MUTE  &trans  &bt BT_SEL 1    &out OUT_BLE  &trans  &trans  &trans  &trans
+&trans  &kp C_BRI_DN  &kp C_BRI_UP     &trans      &trans  &bt BT_SEL 2    &out OUT_USB  &trans  &trans  &trans  &trans  &trans
+                                       &trans      &trans  &trans          &trans        &trans  &trans
             >;
 
             label = "layer_3";
